@@ -9,6 +9,7 @@
 <body>
 
 <div class="nav-tabs">
+    <a href="index.html" id="home-link">ホーム</a>
     <a href="constitution.html" id="constitution-link">憲法</a>
     <a href="history.html" id="history-link">歴史</a>
 </div>
@@ -18,7 +19,7 @@
     <div class="flag"></div>
 </div>
 
-<div class="header-content show">
+<div class="header-content" id="header-content">
     <h2><strong>るいるい皇国のサイトにアクセスいただきありがとう!</strong></h2>
     <h3>よかったら見ていかないー?</h3>
 </div>
@@ -38,11 +39,13 @@
     setTimeout(() => {
         const buttons = document.getElementById('buttons');
         const qaSection = document.getElementById('qa-section');
+        const homeLink = document.getElementById('home-link');
         const constitutionLink = document.getElementById('constitution-link');
         const historyLink = document.getElementById('history-link');
 
         buttons.classList.add('show');
         qaSection.classList.add('show');
+        homeLink.classList.add('show');
         constitutionLink.classList.add('show');
         historyLink.classList.add('show');
     }, 500);
