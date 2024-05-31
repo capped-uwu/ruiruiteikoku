@@ -9,8 +9,8 @@
 <body>
 
 <div class="nav-tabs">
-    <a href="constitution.html">憲法</a>
-    <a href="history.html">歴史</a>
+    <a href="constitution.html" id="constitution-link">憲法</a>
+    <a href="history.html" id="history-link">歴史</a>
 </div>
 
 <div class="container" id="h1text">
@@ -40,11 +40,15 @@
         const headerContent = document.getElementById('header-content');
         const qaSection = document.getElementById('qa-section');
         const h1text = document.getElementById('h1text');
+        const constitutionLink = document.getElementById('constitution-link');
+        const historyLink = document.getElementById('history-link');
 
         buttons.classList.add('show');
         headerContent.classList.add('show');
         qaSection.classList.add('show');
         h1text.classList.add('show');
+        constitutionLink.classList.add('show');
+        historyLink.classList.add('show');
     }, 500);
 </script>
 
