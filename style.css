@@ -14,25 +14,13 @@ body, html {
 .container {
     text-align: center;
     margin-bottom: 30px;
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
     position: relative; /* 相対位置 */
-}
-
-.container.show {
-    opacity: 1;
 }
 
 .buttons {
     display: flex;
     justify-content: center;
     margin-top: 30px;
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-}
-
-.buttons.show {
-    opacity: 1;
 }
 
 .buttons a {
@@ -50,15 +38,9 @@ body, html {
 }
 
 .header-content, .qa-section {
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
     text-align: center;
     max-width: 80%; /* 幅を最大80%に制限 */
     margin: 0 auto;
-}
-
-.header-content.show, .qa-section.show {
-    opacity: 1;
 }
 
 .qa-section {
@@ -138,14 +120,4 @@ h1 {
     h1 {
         font-size: 4rem;
     }
-}
-
-.show {
-    opacity: 1;
-    transition: opacity 0.5s ease-in-out;
-}
-
-.nav-tabs a {
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
 }
